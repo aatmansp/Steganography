@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stagnography</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://www.dukelearntoprogram.com//course1/common/js/image/SimpleImage.js"></script>
+</head>
+<body>
+    <header id="h1"> 
+        <h1>Steganography</h1>
+    </header>
+    <main>
+        <section>
+            <p>
+                <h2><span style="padding-left: 254px;"> Upload Main Image</span>
+                <span style="padding-left: 438px;">Upload Hidden Image</span></h2>
+                <br>
+            </p>
+        </section>
+        <section>
+            <canvas id="c1"></canvas>
+            
+            <canvas id="c2"></canvas>
+        </section>
+        <section style="font-size: 30pt;">
+            <input id="fInput1" type="file" multiple=false accept="image/*" onchange="upload1()">
+            <input id="fInput2" type="file" multiple=false accept="image/*" onchange="upload2()">
+        </section>
+        <br>
+        <section style="text-align: center; padding-bottom: 20px;">
+            <input id="changeButton" style="font-size: 20px; " type="button" value="Hide image!" onclick="hideImage()">
+        </section>
+        <section >
+            
+            <canvas id="c3" style="margin-left: 417px; "></canvas>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Note this only works for both the image of same size</p>
+    </footer>
+</body>
+</html>

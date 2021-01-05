@@ -1,0 +1,58 @@
+*{
+    color: rgb(61, 56, 56);
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+canvas{
+    border: 1px solid;
+    width: 600px;
+    margin-left: 75px;
+    margin-right: 10px;
+    position: relative;
+    
+    
+}
+
+header{
+    background-color: rgb(96, 231, 157);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    font-size: 30pt;
+}
+
+main h2{
+    margin-top: 50px;
+    font-size: 20pt;
+}
+
+#fInput1{
+    margin-top: 20px;
+    margin-left: 270px;
+    margin-right: 455px;
+    margin-bottom: 40px;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+    background-color: rgb(36, 32, 32);
+    padding:10px;
+    
+}
+footer p{
+    color: white;
+}
+
+#changeButton{
+    background-color: rgb(72, 72, 190);
+    color: white;
+    
+}
