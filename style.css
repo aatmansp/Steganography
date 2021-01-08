@@ -73,7 +73,19 @@ footer p{
     overflow: hidden;
     z-index: 1;
     background-color: rgb(96, 231, 157);
+    cursor: pointer;
     
+    border:1px solid black;
   }
+
+#changeButton:hover{
+    
+    background-color: rgb(23, 184, 95);
+  }
+
+
+
+
+
 
   
