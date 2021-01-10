@@ -45,7 +45,7 @@ main h2{
     margin-top: 20px;
     margin-left: 275px;
     margin-right: 455px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 footer {
@@ -76,6 +76,28 @@ footer p{
     cursor: pointer;
     
     border:1px solid black;
+  }
+
+#downloadButton{
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: 10rem;
+    color: rgb(20, 18, 18);
+    text-transform: uppercase;
+    
+    letter-spacing: .1rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: rgb(89, 218, 147);
+    cursor: pointer;
+    
+    border:1px solid black;
+  }
+
+#downloadButton:hover{
+    background-color: rgb(23, 184, 95);
   }
 
 #changeButton:hover{

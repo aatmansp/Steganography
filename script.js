@@ -67,3 +67,12 @@ function join(img1 , img2){
     }
     return ans;
 }
+
+function download(){
+    var canvas=document.getElementById("c3");
+  var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+  var link = document.createElement('a');
+  link.download = "my-image.png";
+  link.href = image;
+  link.click();
+}
