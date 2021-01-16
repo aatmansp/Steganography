@@ -2,6 +2,7 @@
     color: rgb(61, 56, 56);
     box-sizing: border-box;
     
+    
 }
 body {
     margin: 0px;
@@ -9,12 +10,36 @@ body {
     transition: all 2s;
 }
 
+.container{
+    display:flex;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+    flex-direction: row;    
+}
+
+.canvasdiv{
+    /* border: 2px solid black; */
+    text-align: center;
+   
+}
+
+.canvasdiv input{
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+#c3div{
+    text-align: center;
+}
+
+
+
 canvas{
     border: 1px solid;
     width: 600px;
-    margin-left: 75px;
-    margin-right: 10px;
-    position: relative;
+    /* margin-left: 75px;
+    margin-right: 10px; */
+    /* position: relative; */
     background-color: rgb(247, 234, 234);
     border-radius: 1rem;
     transition: all 3s;    
@@ -26,6 +51,7 @@ header{
     padding: 20px;
     border-radius: .5rem;
     transition: all 2s;
+    
 }
 
 header h1{
@@ -41,12 +67,12 @@ main h2{
     font-size: 20pt;
 }
 
-#fInput1{
+/* #fInput1{
     margin-top: 20px;
     margin-left: 275px;
     margin-right: 455px;
     margin-bottom: 0px;
-}
+} */
 
 footer {
     margin-top: 20px;
@@ -104,6 +130,8 @@ footer p{
     
     background-color: rgb(23, 184, 95);
   }
+
+
 
 
 

@@ -15,36 +15,38 @@
         <h1>Steganography</h1>
     </header>
     <main>
-        <section>
-            <p>
-                <h2><span style="padding-left: 254px;"> Upload Main Image</span>
-                <span style="padding-left: 436px;">Upload Hidden Image</span></h2>
-                <br>
-            </p>
-        </section>
-        <section>
-            <canvas id="c1"></i></canvas>
+        <div class="container">
+            <div class="canvasdiv">
+                <p>
+                    <h2><span > Upload Main Image</span></h2>
+                    <canvas id="c1"></i></canvas>
+                    <input id="fInput1" type="file" multiple=false accept="image/*" onchange="upload1()">
+                    
+                    <br>
+                </p>
+            </div>
+            <div class="canvasdiv">
+                <h2><span >Upload Hidden Image</span></h2>
+                
+                <canvas id="c2"></canvas>
+                <input id="fInput2" type="file" multiple=false accept="image/*" onchange="upload2()">
+            </div>
             
-            <canvas id="c2"></canvas>
-        </section>
-        <section>
-            <input id="fInput1" type="file" multiple=false accept="image/*" onchange="upload1()">
-            <input id="fInput2" type="file" multiple=false accept="image/*" onchange="upload2()">
-        </section>
+        </div>
         <br>
-        <section style="text-align: center; padding-bottom: 80px;">
+        <div style="text-align: center; padding-bottom: 80px;">
             <input id="changeButton" style="font-size: 20px; " type="button" value="Hide image!" onclick="hideImage()">
-        </section>
-        <section >
+        </div>
+        <div id="c3div">
             
-            <canvas id="c3" style="margin-left: 417px; "></canvas>
+            <canvas id="c3"></canvas>
             <br>
             <br>
             <div style="text-align: center;">
             <input type="button" id="downloadButton" onClick="download()" value="Download" style="font-size: 20px;">
         </div>
             
-        </section>
+        </div>
     </main>
 
     <footer>
