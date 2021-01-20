@@ -1,87 +1,91 @@
-*{
-    color: rgb(61, 56, 56);
-    box-sizing: border-box;
-    
-    
+* {
+  color: rgb(61, 56, 56);
+  box-sizing: border-box;
 }
 body {
-    margin: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: all 2s;
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: all 2s;
 }
 
-.container{
-    display:flex;
-    /* border: 2px solid black; */
-    justify-content: space-evenly;
-    flex-direction: row;    
+.container {
+  display: flex;
+  /* border: 2px solid black; */
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
 }
 
-.canvasdiv{
-    /* border: 2px solid black; */
-    text-align: center;
-    overflow: hidden;
-    
-   
+.canvasdiv {
+  /* border: 2px solid black; */
+  text-align: center;
+  overflow: hidden;
 }
 
-#line{
-    width: 0px;
-    margin-top: 40px;
-    height: 22em;
-    border: 1px solid rgb(192, 189, 189);
+#line {
+  width: 0px;
+  margin-top: 40px;
+  height: 22em;
+  border: 1px solid rgb(192, 189, 189);
 }
 
-#c3{
-    width: 45%;
+.canvasdiv input {
+  margin-top: 15px;
+  margin-left: 60px;
 }
 
-.canvasdiv input{
-    margin-top: 15px;
-    margin-left: 60px;
+#c3 {
+  width: 45%;
+  border: 1px solid black;
 }
 
-#c3div{
-    text-align: center;
+#c3div {
+  text-align: center;
 }
 
+#c2 {
+  box-shadow: 3px 3px rgb(150, 150, 150);
+}
+#c1 {
+  box-shadow: -3px -3px rgb(150, 150, 150);
+}
 
-
-canvas{
-    border: 1px solid;
-    width: 80%;
-    /* margin-left: 75px;
+canvas {
+  border: 1px solid;
+  width: 80%;
+  /* margin-left: 75px;
     margin-right: 10px; */
-    /* position: relative; */
-    background-color: rgb(247, 234, 234);
-    border-radius: 1rem;
-    transition: all 3s;    
+  /* position: relative; */
+  background-color: rgb(247, 234, 234);
+  border-radius: 1rem;
+  transition: all 3s;
 }
 
-header{
-    background-color: rgb(96, 231, 157);
-    text-align: center;
-    padding: 20px;
-    border-radius: .5rem;
-    transition: all 2s;
-    width: 98.9vw;
-    /* border: 2px solid black;  */
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
+header {
+  background-color: rgb(96, 231, 157);
+  text-align: center;
+  padding: 20px;
+  border-radius: 0.5rem;
+  transition: all 2s;
+  width: 98.9vw;
+  /* border: 2px solid black;  */
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
-header h1{
-    font-size: 30pt;
+header h1 {
+  font-size: 2.5rem;
 }
 
-main{
-    transition: all 2s;
+main {
+  transition: all 2s;
 }
 
-main h2{
-    margin-top: 50px;
-    font-size: 20pt;
+main h2 {
+  margin-top: 50px;
+  font-size: 1.67rem;
 }
 
 /* #fInput1{
@@ -92,67 +96,57 @@ main h2{
 } */
 
 footer {
-    margin-top: 20px;
-    padding-top: 40px;
-    padding-left: 20px;
-    background-color: rgb(36, 32, 32);
-    padding:10px;
-    transition: all 2s;
+  margin-top: 20px;
+  padding-top: 40px;
+  padding-left: 20px;
+  background-color: rgb(36, 32, 32);
+  padding: 10px;
+  transition: all 2s;
 }
-footer p{
-    color: white;
+footer p {
+  color: white;
 }
 
 #changeButton {
-    display: inline-block;
-    padding: .75rem 1.25rem;
-    border-radius: 10rem;
-    color: rgb(20, 18, 18);
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .15rem;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    background-color: rgb(96, 231, 157);
-    cursor: pointer;
-    
-    border:1px solid black;
-  }
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: rgb(20, 18, 18);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgb(96, 231, 157);
+  cursor: pointer;
 
-#downloadButton{
-    display: inline-block;
-    padding: .5rem 1rem;
-    border-radius: 10rem;
-    color: rgb(20, 18, 18);
-    text-transform: uppercase;
-    
-    letter-spacing: .1rem;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    background-color: rgb(89, 218, 147);
-    cursor: pointer;
-    
-    border:1px solid black;
-  }
+  border: 1px solid black;
+}
 
-#downloadButton:hover{
-    background-color: rgb(23, 184, 95);
-  }
+#downloadButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  color: rgb(20, 18, 18);
+  text-transform: uppercase;
 
-#changeButton:hover{
-    
-    background-color: rgb(23, 184, 95);
-  }
+  letter-spacing: 0.1rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgb(89, 218, 147);
+  cursor: pointer;
 
+  border: 1px solid black;
+}
 
+#downloadButton:hover {
+  background-color: rgb(23, 184, 95);
+}
 
-
-
-
-
-
-  
+#changeButton:hover {
+  background-color: rgb(23, 184, 95);
+}
